@@ -1,0 +1,525 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.10)  19 AUG 2016 17:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**/home/matthias/Desktop/LHCP2016/LHCP2016.tex
+(/home/matthias/Desktop/LHCP2016/LHCP2016.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 14 language(s) loaded.
+(./PoS.cls
+Document Class: PoS 2015/08/05 v1.2.4 LaTeX document class - P.D.
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 143.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count79
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+)
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+\symforjmath=\mathgroup8
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftex/pdfcolor.tex)
+\titlesk@a=\skip41
+\titlesk@b=\skip42
+\titlesk@c=\skip43
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\prev@t=\toks16
+\cur@t=\toks17
+\@firstaubox=\box26
+\addr@skip=\skip44
+\auth@skip=\skip45
+\PoSshorttitle@box=\box27
+\PoScopy@date=\box28
+\PoSpaper@url=\box29
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 708.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+\c@figure=\count86
+\c@table=\count87
+\c@OptionTest=\count88
+\@tmpbox=\box30
+\figbox=\box31
+\tabbox=\box32
+\pagebox=\box33
+\ffigcount=\count89
+\ftabcount=\count90
+\hangcount=\count91
+\nosuccesstryfig=\count92
+\nosuccesstrytab=\count93
+\figgutter=\dimen104
+\tabgutter=\dimen105
+\fl@wd=\dimen106
+\fl@ht=\dimen107
+\htdone=\dimen108
+\pageht=\dimen109
+\startpageht=\dimen110
+\floatfltwidth=\dimen111
+\fltitemwidth=\dimen112
+\outputpretest=\toks18
+\JCAP@outputbox=\box34
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\bibindent=\dimen113
+) (./commands.tex
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen114
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen115
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count94
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count95
+\leftroot@=\count96
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count97
+\DOTSCASE@=\count98
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box35
+\strutbox@=\box36
+\big@size=\dimen116
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
+\dotsspace@=\muskip10
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
+\tag@help=\toks20
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
+\andhelp@=\toks21
+\eqnshift@=\dimen117
+\alignsep@=\dimen118
+\tagshift@=\dimen119
+\tagwidth@=\dimen120
+\totwidth@=\dimen121
+\lineht@=\dimen122
+\@envbody=\toks22
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+))
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+) (./LHCP2016.aux)
+\openout1 = `LHCP2016.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count106
+\scratchdimen=\dimen123
+\scratchbox=\box37
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen124
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks25
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.jpg,.jpeg,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for T1+phv on input line 25.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 25.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 25
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 25
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 25
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 25
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 25.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 25.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+
+<PoSlogo.pdf, id=2, 430.60875pt x 45.16875pt>
+File: PoSlogo.pdf Graphic file (type pdf)
+ <use PoSlogo.pdf>
+Package pdftex.def Info: PoSlogo.pdf used on input line 25.
+(pdftex.def)             Requested size: 430.60768pt x 45.16862pt.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+ [0
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./PoSlogo.pdf>]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 27.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+
+<figures/tchannel/2j1t_BDT.pdf, id=26, 569.12625pt x 544.0325pt>
+File: figures/tchannel/2j1t_BDT.pdf Graphic file (type pdf)
+
+<use figures/tchannel/2j1t_BDT.pdf>
+Package pdftex.def Info: figures/tchannel/2j1t_BDT.pdf used on input line 42.
+(pdftex.def)             Requested size: 172.07993pt x 164.4894pt.
+
+<figures/tchannel/3j1t_BDT.pdf, id=27, 569.12625pt x 544.0325pt>
+File: figures/tchannel/3j1t_BDT.pdf Graphic file (type pdf)
+
+<use figures/tchannel/3j1t_BDT.pdf>
+Package pdftex.def Info: figures/tchannel/3j1t_BDT.pdf used on input line 43.
+(pdftex.def)             Requested size: 172.07993pt x 164.4894pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 44.
+
+<figures/tchannel/ratio.pdf, id=30, 569.12625pt x 385.44pt>
+File: figures/tchannel/ratio.pdf Graphic file (type pdf)
+
+<use figures/tchannel/ratio.pdf>
+Package pdftex.def Info: figures/tchannel/ratio.pdf used on input line 52.
+(pdftex.def)             Requested size: 301.14316pt x 203.95876pt.
+
+<figures/tchannel_diff/top_pt_unfolded.pdf, id=34, 296.10625pt x 268.00125pt>
+File: figures/tchannel_diff/top_pt_unfolded.pdf Graphic file (type pdf)
+
+<use figures/tchannel_diff/top_pt_unfolded.pdf>
+Package pdftex.def Info: figures/tchannel_diff/top_pt_unfolded.pdf used on inpu
+t line 61.
+(pdftex.def)             Requested size: 180.68588pt x 163.54185pt.
+
+<figures/tchannel_diff/top_y_unfolded.pdf, id=35, 296.10625pt x 268.00125pt>
+File: figures/tchannel_diff/top_y_unfolded.pdf Graphic file (type pdf)
+
+<use figures/tchannel_diff/top_y_unfolded.pdf>
+Package pdftex.def Info: figures/tchannel_diff/top_y_unfolded.pdf used on input
+ line 62.
+(pdftex.def)             Requested size: 180.68588pt x 163.54185pt.
+ [1]
+<figures/schannel/mu_7TeV_BDT_signal.pdf, id=63, 569.12625pt x 385.44pt>
+File: figures/schannel/mu_7TeV_BDT_signal.pdf Graphic file (type pdf)
+
+<use figures/schannel/mu_7TeV_BDT_signal.pdf>
+Package pdftex.def Info: figures/schannel/mu_7TeV_BDT_signal.pdf used on input 
+line 76.
+(pdftex.def)             Requested size: 206.49722pt x 139.85222pt.
+
+<figures/schannel/mu_8TeV_BDT_signal.pdf, id=64, 569.12625pt x 385.44pt>
+File: figures/schannel/mu_8TeV_BDT_signal.pdf Graphic file (type pdf)
+
+<use figures/schannel/mu_8TeV_BDT_signal.pdf>
+Package pdftex.def Info: figures/schannel/mu_8TeV_BDT_signal.pdf used on input 
+line 77.
+(pdftex.def)             Requested size: 206.49722pt x 139.85222pt.
+ [2 <./figures/tchannel/2j1t_BDT.pdf, page is rotated 90 degrees> <./figures/tc
+hannel/3j1t_BDT.pdf, page is rotated 90 degrees> <./figures/tchannel/ratio.pdf,
+ page is rotated 90 degrees>]
+[3 <./figures/tchannel_diff/top_pt_unfolded.pdf, page is rotated 90 degrees> <.
+/figures/tchannel_diff/top_y_unfolded.pdf, page is rotated 90 degrees> <./figur
+es/schannel/mu_7TeV_BDT_signal.pdf, page is rotated 90 degrees> <./figures/scha
+nnel/mu_8TeV_BDT_signal.pdf, page is rotated 90 degrees>]
+<figures/polarization/2j1t_cos_theta.pdf, id=388, 255.95625pt x 170.6375pt>
+File: figures/polarization/2j1t_cos_theta.pdf Graphic file (type pdf)
+
+<use figures/polarization/2j1t_cos_theta.pdf>
+Package pdftex.def Info: figures/polarization/2j1t_cos_theta.pdf used on input 
+line 101.
+(pdftex.def)             Requested size: 232.30855pt x 154.87157pt.
+
+<figures/polarization/cos_theta_unfolded.pdf, id=389, 569.12625pt x 489.83pt>
+File: figures/polarization/cos_theta_unfolded.pdf Graphic file (type pdf)
+
+<use figures/polarization/cos_theta_unfolded.pdf>
+Package pdftex.def Info: figures/polarization/cos_theta_unfolded.pdf used on in
+put line 102.
+(pdftex.def)             Requested size: 184.9856pt x 159.21529pt.
+
+<figures/FCNC/BDT_utg.pdf, id=397, 569.12625pt x 362.35374pt>
+File: figures/FCNC/BDT_utg.pdf Graphic file (type pdf)
+
+<use figures/FCNC/BDT_utg.pdf>
+Package pdftex.def Info: figures/FCNC/BDT_utg.pdf used on input line 126.
+(pdftex.def)             Requested size: 206.49722pt x 131.47565pt.
+
+<figures/FCNC/BDT_ctg.pdf, id=398, 569.12625pt x 362.35374pt>
+File: figures/FCNC/BDT_ctg.pdf Graphic file (type pdf)
+
+<use figures/FCNC/BDT_ctg.pdf>
+Package pdftex.def Info: figures/FCNC/BDT_ctg.pdf used on input line 127.
+(pdftex.def)             Requested size: 206.49722pt x 131.47565pt.
+
+<figures/limits.pdf, id=401, 569.12625pt x 362.35374pt>
+File: figures/limits.pdf Graphic file (type pdf)
+
+<use figures/limits.pdf>
+Package pdftex.def Info: figures/limits.pdf used on input line 135.
+(pdftex.def)             Requested size: 301.14316pt x 191.74246pt.
+ [4 <./figures/polarization/2j1t_cos_theta.pdf, page is rotated 90 degrees> <./
+figures/polarization/cos_theta_unfolded.pdf, page is rotated 90 degrees>]
+<figures/singletop_sqrts.pdf, id=506, 569.12625pt x 408.52625pt>
+File: figures/singletop_sqrts.pdf Graphic file (type pdf)
+
+<use figures/singletop_sqrts.pdf>
+Package pdftex.def Info: figures/singletop_sqrts.pdf used on input line 149.
+(pdftex.def)             Requested size: 301.14316pt x 216.17503pt.
+ [5 <./figures/FCNC/BDT_utg.pdf, page is rotated 90 degrees> <./figures/FCNC/BD
+T_ctg.pdf, page is rotated 90 degrees> <./figures/limits.pdf, page is rotated 9
+0 degrees>] [6 <./figures/singletop_sqrts.pdf, page is rotated 90 degrees>] [7
+
+] (./LHCP2016.aux) ) 
+Here is how much of TeX's memory you used:
+ 3525 strings out of 494376
+ 45581 string characters out of 6171135
+ 105640 words of memory out of 5000000
+ 6656 multiletter control sequences out of 15000+600000
+ 93998 words of font info for 158 fonts, out of 8000000 for 9000
+ 452 hyphenation exceptions out of 8191
+ 38i,16n,28p,1589b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
+b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on LHCP2016.pdf (8 pages, 374562 bytes).
+PDF statistics:
+ 757 PDF objects out of 1000 (max. 8388607)
+ 380 compressed objects within 4 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+
