@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.7)  6 NOV 2016 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.7)  6 NOV 2016 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -148,50 +148,50 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<figures/fit/reco_mtw.pdf, id=14, 296.10625pt x 268.00125pt>
+<figures/fit/reco_mtw.pdf, id=16, 296.10625pt x 268.00125pt>
 File: figures/fit/reco_mtw.pdf Graphic file (type pdf)
 
 <use figures/fit/reco_mtw.pdf>
-Package pdftex.def Info: figures/fit/reco_mtw.pdf used on input line 77.
+Package pdftex.def Info: figures/fit/reco_mtw.pdf used on input line 84.
 (pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
 
-<figures/fit/reco_BDT.pdf, id=15, 296.10625pt x 268.00125pt>
+<figures/fit/reco_BDT.pdf, id=17, 296.10625pt x 268.00125pt>
 File: figures/fit/reco_BDT.pdf Graphic file (type pdf)
 
 <use figures/fit/reco_BDT.pdf>
-Package pdftex.def Info: figures/fit/reco_BDT.pdf used on input line 78.
+Package pdftex.def Info: figures/fit/reco_BDT.pdf used on input line 85.
 (pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
 
-<figures/unfolding/reco_toppt_bdt.pdf, id=16, 296.10625pt x 268.00125pt>
+<figures/unfolding/reco_toppt_bdt.pdf, id=18, 296.10625pt x 268.00125pt>
 File: figures/unfolding/reco_toppt_bdt.pdf Graphic file (type pdf)
 
 <use figures/unfolding/reco_toppt_bdt.pdf>
 Package pdftex.def Info: figures/unfolding/reco_toppt_bdt.pdf used on input lin
-e 93.
+e 100.
 (pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
 
-<figures/unfolding/reco_topy_bdt.pdf, id=17, 296.10625pt x 268.00125pt>
+<figures/unfolding/reco_topy_bdt.pdf, id=19, 296.10625pt x 268.00125pt>
 File: figures/unfolding/reco_topy_bdt.pdf Graphic file (type pdf)
 
 <use figures/unfolding/reco_topy_bdt.pdf>
 Package pdftex.def Info: figures/unfolding/reco_topy_bdt.pdf used on input line
- 94.
+ 101.
 (pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
 
-<figures/result/unfolded_top_pt.pdf, id=18, 296.10625pt x 268.00125pt>
+<figures/result/unfolded_top_pt.pdf, id=20, 296.10625pt x 268.00125pt>
 File: figures/result/unfolded_top_pt.pdf Graphic file (type pdf)
 
 <use figures/result/unfolded_top_pt.pdf>
 Package pdftex.def Info: figures/result/unfolded_top_pt.pdf used on input line 
-104.
+111.
 (pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
 
-<figures/result/unfolded_top_y.pdf, id=19, 296.10625pt x 268.00125pt>
+<figures/result/unfolded_top_y.pdf, id=21, 296.10625pt x 268.00125pt>
 File: figures/result/unfolded_top_y.pdf Graphic file (type pdf)
 
 <use figures/result/unfolded_top_y.pdf>
 Package pdftex.def Info: figures/result/unfolded_top_y.pdf used on input line 1
-05.
+12.
 (pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
  [1 <./figures/fit/reco_mtw.pdf, page is rotated 90 degrees> <./figures/fit/rec
 o_BDT.pdf, page is rotated 90 degrees>]
@@ -200,13 +200,13 @@ res/unfolding/reco_topy_bdt.pdf, page is rotated 90 degrees>] [3 <./figures/res
 ult/unfolded_top_pt.pdf, page is rotated 90 degrees> <./figures/result/unfolded
 _top_y.pdf, page is rotated 90 degrees>] (./eprint.aux) ) 
 Here is how much of TeX's memory you used:
- 1635 strings out of 494330
- 22843 string characters out of 6168996
- 77583 words of memory out of 5000000
- 4954 multiletter control sequences out of 15000+600000
- 9157 words of font info for 32 fonts, out of 8000000 for 9000
+ 1634 strings out of 494330
+ 22832 string characters out of 6168996
+ 78581 words of memory out of 5000000
+ 4953 multiletter control sequences out of 15000+600000
+ 8850 words of font info for 31 fonts, out of 8000000 for 9000
  452 hyphenation exceptions out of 8191
- 37i,8n,23p,326b,257s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,8n,23p,701b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fo
@@ -216,11 +216,13 @@ blic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on eprint.pdf (4 pages, 222705 bytes).
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on eprint.pdf (4 pages, 240577 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
+ 330 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
