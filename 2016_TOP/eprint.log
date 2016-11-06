@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.10)  7 OCT 2016 12:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.7)  6 NOV 2016 11:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **eprint.tex
 (./eprint.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 14 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 19 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -55,21 +55,21 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(./econfmacros.tex) (./eprint.aux)
+(./econfmacros.tex) (./mycommands.tex) (./eprint.aux)
 \openout1 = `eprint.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -133,49 +133,94 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 46.
+(Font)              <12> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 46.
+(Font)              <8> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 46.
+(Font)              <6> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 51.
+(Font)              <7> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 51.
+(Font)              <5> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 60.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<magnet.pdf, id=14, 249.93375pt x 240.9pt>
-File: magnet.pdf Graphic file (type pdf)
- <use magnet.pdf>
-Package pdftex.def Info: magnet.pdf used on input line 77.
-(pdftex.def)             Requested size: 112.46915pt x 108.405pt.
- [1 <./magnet.pdf>]
-(./eprint.aux) ) 
+<figures/fit/reco_mtw.pdf, id=14, 296.10625pt x 268.00125pt>
+File: figures/fit/reco_mtw.pdf Graphic file (type pdf)
+
+<use figures/fit/reco_mtw.pdf>
+Package pdftex.def Info: figures/fit/reco_mtw.pdf used on input line 77.
+(pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
+
+<figures/fit/reco_BDT.pdf, id=15, 296.10625pt x 268.00125pt>
+File: figures/fit/reco_BDT.pdf Graphic file (type pdf)
+
+<use figures/fit/reco_BDT.pdf>
+Package pdftex.def Info: figures/fit/reco_BDT.pdf used on input line 78.
+(pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
+
+<figures/unfolding/reco_toppt_bdt.pdf, id=16, 296.10625pt x 268.00125pt>
+File: figures/unfolding/reco_toppt_bdt.pdf Graphic file (type pdf)
+
+<use figures/unfolding/reco_toppt_bdt.pdf>
+Package pdftex.def Info: figures/unfolding/reco_toppt_bdt.pdf used on input lin
+e 93.
+(pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
+
+<figures/unfolding/reco_topy_bdt.pdf, id=17, 296.10625pt x 268.00125pt>
+File: figures/unfolding/reco_topy_bdt.pdf Graphic file (type pdf)
+
+<use figures/unfolding/reco_topy_bdt.pdf>
+Package pdftex.def Info: figures/unfolding/reco_topy_bdt.pdf used on input line
+ 94.
+(pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
+
+<figures/result/unfolded_top_pt.pdf, id=18, 296.10625pt x 268.00125pt>
+File: figures/result/unfolded_top_pt.pdf Graphic file (type pdf)
+
+<use figures/result/unfolded_top_pt.pdf>
+Package pdftex.def Info: figures/result/unfolded_top_pt.pdf used on input line 
+104.
+(pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
+
+<figures/result/unfolded_top_y.pdf, id=19, 296.10625pt x 268.00125pt>
+File: figures/result/unfolded_top_y.pdf Graphic file (type pdf)
+
+<use figures/result/unfolded_top_y.pdf>
+Package pdftex.def Info: figures/result/unfolded_top_y.pdf used on input line 1
+05.
+(pdftex.def)             Requested size: 195.12767pt x 176.61147pt.
+ [1 <./figures/fit/reco_mtw.pdf, page is rotated 90 degrees> <./figures/fit/rec
+o_BDT.pdf, page is rotated 90 degrees>]
+[2 <./figures/unfolding/reco_toppt_bdt.pdf, page is rotated 90 degrees> <./figu
+res/unfolding/reco_topy_bdt.pdf, page is rotated 90 degrees>] [3 <./figures/res
+ult/unfolded_top_pt.pdf, page is rotated 90 degrees> <./figures/result/unfolded
+_top_y.pdf, page is rotated 90 degrees>] (./eprint.aux) ) 
 Here is how much of TeX's memory you used:
- 1578 strings out of 494376
- 21736 string characters out of 6171135
- 76893 words of memory out of 5000000
- 4893 multiletter control sequences out of 15000+600000
+ 1635 strings out of 494330
+ 22843 string characters out of 6168996
+ 77583 words of memory out of 5000000
+ 4954 multiletter control sequences out of 15000+600000
  9157 words of font info for 32 fonts, out of 8000000 for 9000
  452 hyphenation exceptions out of 8191
- 37i,8n,23p,232b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb>
-Output written on eprint.pdf (2 pages, 129291 bytes).
+ 37i,8n,23p,326b,257s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on eprint.pdf (4 pages, 222705 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 322 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

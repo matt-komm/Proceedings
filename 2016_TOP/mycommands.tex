@@ -1,0 +1,48 @@
+% PROCESSES
+\newcommand{\qcd}{\ensuremath{QCD}}
+\newcommand{\wjets}{\ensuremath{\textrm{W+jets}}}
+\newcommand{\zjets}{\ensuremath{\textrm{$Z/\gamma^*$+jets}}}
+\newcommand{\vjets}{\ensuremath{\textrm{V+jets}}}
+\newcommand{\ttbar}{\ensuremath{\mathrm{t}\bar{\mathrm{t}}}}
+\newcommand{\tw}{\ensuremath{\mathrm{tW}}}
+\newcommand{\tch}{\ensuremath{t\mathrm{\mbox{-}channel}}}
+
+
+% VARIABLES
+\newcommand{\muiso}{\ensuremath{I_\mathrm{rel.}^{\mu}}}
+\newcommand{\eiso}{\ensuremath{I_\mathrm{rel.}^{e}}}
+\newcommand{\mtop}{\ensuremath{m_{\mu\nu \mathrm{b}}}}
+\newcommand{\massw}{\ensuremath{m_{\mathrm{W}}}}
+\newcommand{\met}{\ensuremath{{E\!\!\!/}_{\mathrm{T}}}}
+\newcommand{\mtw}{\ensuremath{m_{\mathrm{T}}(\mathrm{W})}}
+\newcommand{\pvmiss}{\ensuremath{\vec{p_\mathrm{T}}\hspace{-1.02em}/\kern 0.5em}}
+\newcommand{\bdt}{\ensuremath{\mathrm{BDT}}}
+\newcommand{\bdtcut}{\ensuremath{0.2}}
+
+% FORMATTING
+
+\def\colvecnext#1{
+    #1
+    \global\advance\colveccount-1
+    \ifnum\colveccount>0
+        \\
+        \expandafter\colvecnext
+    \else
+        \end{pmatrix}
+    \fi
+}
+
+% OTHER
+\newcommand{\invfb}{\ensuremath{\mathrm{fb}^{-1}}}
+\newcommand{\invpb}{\ensuremath{\mathrm{pb}^{-1}}}
+\newcommand{\jprime}{\ensuremath{j^{\prime}}}
+\newcommand{\qprime}{\ensuremath{q^{\prime}}}
+\newcommand{\bjtop}{\ensuremath{j_\mathrm{b,top}}}
+
+\newcommand{\AMCATNLO}{\textsc{mg}5\_a\textsc{mc@nlo}}
+\newcommand{\tunfold}{\textsc{TUnfold}}
+
+\def\todolist{\subsection{TODO list}}
+\newcommand{\addtodolist}[1]{\expandafter\def\expandafter\todolist\expandafter{\todolist{}\\ #1}}
+%\newcommand{\todo}[1]{\textsc{\color{red}{\textbf{TODO}: #1}}\addtodolist{#1}}
+\newcommand{\todo}[1]{}

@@ -39,6 +39,7 @@ Universit\'e catholique de Louvain, B-1348 Louvain-la-Neuve, BELGIUM}
 %  personal abbreviations and macros
 %    the following package contains macros used in this document:
 \input econfmacros.tex
+\input mycommands.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -52,8 +53,7 @@ Universit\'e catholique de Louvain, B-1348 Louvain-la-Neuve, BELGIUM}
 \Address{\institute}
 \vfill
 \begin{Abstract}
-I describe a case study of Mesmeric influence on a physiological  reaction
-in two  Albanian subjects.
+
 \end{Abstract}
 \vfill
 \begin{Presented}
@@ -69,32 +69,59 @@ Olomouc, Czech Republic,  September 19--23, 2016
 \section{Introduction}
 
 
-\section{Observations}
+
+\section{Event selection}
 
 
-\begin{figure}[htb]
-\centering
-\includegraphics[height=1.5in]{magnet}
-\caption{Plan of the magnet used in the mesmeric studies.}
-\label{fig:magnet}
+
+\section{Signal extraction}
+
+\begin{figure}[th]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{figures/fit/reco_mtw.pdf}\hspace{0.05\textwidth}
+\includegraphics[width=0.45\textwidth]{figures/fit/reco_BDT.pdf}
+\end{center}
+
+\caption{Distributions of (left)~the transverse W boson mass and (right)~the BDT discriminant after requiring $\mtw>50~\mathrm{GeV}$.}
 \end{figure}
 
-\section{Interpretation}
+\subsection{Boosted decision tree}
+
+\subsection{Maximum likelihood fitting}
+
+\subsection{Unfolding}
+
+
+\begin{figure}[th]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{figures/unfolding/reco_toppt_bdt.pdf}\hspace{0.05\textwidth}
+\includegraphics[width=0.45\textwidth]{figures/unfolding/reco_topy_bdt.pdf}
+\end{center}
+
+\caption{.}
+\end{figure}
+
+\section{Results}
+
+\begin{figure}[th]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{figures/result/unfolded_top_pt.pdf}\hspace{0.05\textwidth}
+\includegraphics[width=0.45\textwidth]{figures/result/unfolded_top_y.pdf}
+\end{center}
+
+\caption{Normalized differential t-channel single-top-quark cross section as a function of the parton-level top quark (left)~transverse momentum and (right)~rapidity.}
+\end{figure}
+
+
+
+\section{Conclusion}
 
 
 \Acknowledgements
-I am grateful to Don Alfonso d'Alba for certain services essential to 
-this investigation.
 
 
 
 \begin{thebibliography}{99}
-
-%%
-%%  bibliographic items can be constructed using the LaTeX format in SPIRES:
-%%    see    http://www.slac.stanford.edu/spires/hep/latex.html
-%%  SPIRES will also supply the CITATION line information; please include it.
-%%
 
 \bibitem{Mesmer}
 F. A. Mesmer, Proc. Wien. Acad. Sci. {\bf 13}, 1564, 1593 (1762).
