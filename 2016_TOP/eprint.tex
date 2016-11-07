@@ -70,13 +70,18 @@ Olomouc, Czech Republic,  September 19--23, 2016
 
 Cross section measurements of single top quark production allow to study electroweak interactions involving heavy quarks. For example, precise inclusive cross section measurements can yield model-independent limits on the CKM matrix element, $\mathrm{V}_\mathrm{tb}$, whereas differential measurements can test theoretical calculations and predictions by generators in great detail.
 
-In this note, a first differential cross section of t-channel single-top-quark production is presented using the first pp collision data recorded by the CMS experiment in 2015 at $\sqrt{s}=13~\mathrm{TeV}$ corresponding to $2.3~\mathrm{fb}^{-1}$. It is based on Ref.~\cite{TOP-16-004}.
+In this note, a first differential cross section of t-channel single-top-quark production as a function of the top quark \pt and rapidity, $y=\frac{1}{2}\ln[(E+p_{z})/(E-p_{z})]$, is presented, using the first pp collision data recorded by the CMS experiment in 2015 at $\sqrt{s}=13~\mathrm{TeV}$ corresponding to $2.3~\mathrm{fb}^{-1}$. It is based on Ref.~\cite{TOP-16-004}.
 
 \section{Event selection}
 
+The measurement focuses on single top quarks decaying to a b jet, a muon, and a neutrino. The t-channel production signature consists furthermore of a spectator quark which is characteristically scattered into the forward detector region. Muon candidates are required to be well-isolated with a transverse momentum of $\pt>22~\mathrm{GeV}$ within a pseudorapidity range of $|\eta|<2.4$. Jets with $\pt>40~\mathrm{GeV}$ are selected within $|\eta|<4.7$. A b-tagging algorithm is employed for jets within $|\eta|<2.4$ based on a multivariate discriminant to identify b jets from the top quark decays. A selection on the transverse W boson mass of $\mtw>50~\mathrm{GeV}$ is applied discriminate against multijet events. In addition to the signal region~(2~jets, 1~b-tag), events from two control regions containing 3~jets with 1~or 2~b-tags are considered. These are enriched in \ttbar events which is the main background of this measurement.
 
 
 \section{Signal extraction}
+
+The 4-momentum of a top quark candidate is reconstructed by summing the momenta of its reconstructed decay products. A neutrino candidate is found by solving for the unknown $p_{z}^{\nu}$ momentum under a W boson mass constraint, $m_{W}^{2}=(p_{\mu}+p_{\nu})^{2}$.
+
+To extract the signal yield as a function of the reconstructed top quark \pt and $y$, multiple, exclusive maximum likelihood fits are performed using the $\mtw$ shape for events with $\mtw<50~\mathrm{GeV}$ and the shape of a Boosted Decision Tree~(BDT) trained to discriminate signal against \ttbar and \wjets events. The low $\mtw$ region is particularly sensitive to the multijet contribution whose shape is estimated from data using a sideband with inverted muon isolation. Figure~\ref{fig:mtwbdt} shows the $\mtw$ and BDT distributions after scaling the predictions to the inclusive fit result. A good agreement is observed.
 
 \begin{figure}[th]
 \begin{center}
@@ -84,15 +89,12 @@ In this note, a first differential cross section of t-channel single-top-quark p
 \includegraphics[width=0.45\textwidth]{figures/fit/reco_BDT.pdf}
 \end{center}
 
-\caption{Distributions of (left)~the transverse W boson mass and (right)~the BDT discriminant after requiring $\mtw>50~\mathrm{GeV}$.}
+\caption{\label{fig:mtwbdt}Distributions of (left)~the transverse W boson mass and (right)~the BDT discriminant after requiring $\mtw>50~\mathrm{GeV}$.}
 \end{figure}
 
-\subsection{Boosted decision tree}
+The exclusive fit results are passed to an unfolding method, \tunfold, to infer the corresponding parton-level distributions.
 
-\subsection{Maximum likelihood fitting}
-
-\subsection{Unfolding}
-
+\section{Systematics}
 
 \begin{figure}[th]
 \begin{center}
