@@ -74,14 +74,14 @@ In this note, a first differential cross section of t-channel single-top-quark p
 
 \section{Event selection}
 
-The measurement focuses on single top quarks decaying to a b jet, a muon, and a neutrino. The t-channel production signature consists furthermore of a spectator quark which is characteristically scattered into the forward detector region. Muon candidates are required to be well-isolated with a transverse momentum of $\pt>22~\mathrm{GeV}$ within a pseudorapidity range of $|\eta|<2.4$. Jets with $\pt>40~\mathrm{GeV}$ are selected within $|\eta|<4.7$. A b-tagging algorithm is employed for jets within $|\eta|<2.4$ based on a multivariate discriminant to identify b jets from the top quark decays. A selection on the transverse W boson mass of $\mtw>50~\mathrm{GeV}$ is applied discriminate against multijet events. In addition to the signal region~(2~jets, 1~b-tag), events from two control regions containing 3~jets with 1~or 2~b-tags are considered. These are enriched in \ttbar events which is the main background of this measurement.
+The measurement focuses on single top quarks decaying to a b jet, a muon, and a neutrino. The t-channel production signature consists furthermore of a light, spectator quark~(u/d/s) which is characteristically scattered into the forward detector region. Muon candidates are required to be well-isolated with a transverse momentum of $\pt>22~\mathrm{GeV}$ within a pseudorapidity range of $|\eta|<2.4$. Jets with $\pt>40~\mathrm{GeV}$ are selected within $|\eta|<4.7$. A b-tagging algorithm is employed for jets within $|\eta|<2.4$ based on a multivariate discriminant to identify b jets from top quark decays. A selection on the transverse W boson mass of $\mtw>50~\mathrm{GeV}$ is applied discriminate against multijet events. In addition to the signal region~(2~jets, 1~b-tag), events from two control regions containing 3~jets with 1~or 2~b-tags are considered. These are enriched in \ttbar events which is the main background of this measurement.
 
 
 \section{Signal extraction}
 
-The 4-momentum of a top quark candidate is reconstructed by summing the momenta of its reconstructed decay products. A neutrino candidate is found by solving for the unknown $p_{z}^{\nu}$ momentum under a W boson mass constraint, $m_{W}^{2}=(p_{\mu}+p_{\nu})^{2}$.
+A neutrino candidate is found by solving for the unknown $p_{z}^{\nu}$ momentum under a W boson mass constraint, $m_{W}^{2}=(p_{\mu}+p_{\nu})^{2}$. The 4-momentum of a top quark candidate can then be reconstructed from the reconstructed decay products.
 
-To extract the signal yield as a function of the reconstructed top quark \pt and $y$, multiple, exclusive maximum likelihood fits are performed using the $\mtw$ shape for events with $\mtw<50~\mathrm{GeV}$ and the shape of a Boosted Decision Tree~(BDT) trained to discriminate signal against \ttbar and \wjets events. The low $\mtw$ region is particularly sensitive to the multijet contribution whose shape is estimated from data using a sideband with inverted muon isolation. Figure~\ref{fig:mtwbdt} shows the $\mtw$ and BDT distributions after scaling the predictions to the inclusive fit result. A good agreement is observed.
+To extract the signal yield as a function of the reconstructed top quark \pt and $|y|$, multiple, exclusive maximum likelihood fits are performed. The fits utilize an extended likelihood using the $\mtw$ shape for events with $\mtw<50~\mathrm{GeV}$ and the shape of a Boosted Decision Tree~(BDT) discriminant otherwise. The BDT is trained to discriminate signal against \ttbar and \wjets events by exploiting the following event observables: $\mtop$, $|\eta_\mathrm{light~jet}|$, $\Delta R(\mathrm{b\mbox{-}jet,~light~jet})$, $|\Delta\eta(\mathrm{b\mbox{-}jet,\mu})|$, and \mtw. The low $\mtw$ region is particularly sensitive to the multijet contribution whose shape is estimated from data using a sideband with inverted muon isolation. Figure~\ref{fig:mtwbdt} shows the $\mtw$ and BDT distributions after scaling the predictions to the inclusive fit result. A good agreement is observed.
 
 \begin{figure}[th]
 \begin{center}
@@ -92,9 +92,7 @@ To extract the signal yield as a function of the reconstructed top quark \pt and
 \caption{\label{fig:mtwbdt}Distributions of (left)~the transverse W boson mass and (right)~the BDT discriminant after requiring $\mtw>50~\mathrm{GeV}$.}
 \end{figure}
 
-The exclusive fit results are passed to an unfolding method, \tunfold, to infer the corresponding parton-level distributions.
-
-\section{Systematics}
+The distributions of the top quark \pt and $|y|$ at reconstruction level normalized to the inclusive fit result are shown in Fig.~\ref{fig:recotop} in a signal-enhanced phase space defined by $\mtw>50~\mathrm{GeV}$ and $\mathrm{BDT}>0.6$. The distribution of the top quark rapidity agrees well with the prediction. However, a slight 
 
 \begin{figure}[th]
 \begin{center}
@@ -102,8 +100,14 @@ The exclusive fit results are passed to an unfolding method, \tunfold, to infer 
 \includegraphics[width=0.45\textwidth]{figures/unfolding/reco_topy_bdt.pdf}
 \end{center}
 
-\caption{.}
+\caption{\label{fig:recotop}Distributions of the top quark (left)~transverse momentum and (right)~rapidity in a signal-enhanced phase space defined by $\mtw>50~\mathrm{GeV}$ and $\mathrm{BDT}>0.6$. Predictions are normalized to the inclusive fit result.}
 \end{figure}
+
+To infer the corresponding parton-level differential cross sections, the exclusive fit results are passed to an unfolding procedure. Regularized unfolding based on the curvature of the unfolded spectrum as implemented in the \tunfold package~\cite{tunfold} is used. 
+
+The measurement is affected by various sources of systematics. 
+
+
 
 \section{Results}
 
@@ -122,10 +126,12 @@ The exclusive fit results are passed to an unfolding method, \tunfold, to infer 
 
 
 
+
+
 \begin{thebibliography}{99}
 
-\bibitem{TOP-16-004} CMS Collaboration, \emph{CMS Physics Analysis Summary} CMS-TOP-16-004, 2016.
-
+\bibitem{TOP-16-004} CMS Collaboration, \emph{CMS Physics Analysis Summary} CMS-TOP-16-004 (2016).
+\bibitem{tunfold} S. Schmitt, \emph{JINST} \textbf{7} (2012) T10003.
 
 \end{thebibliography}
 
