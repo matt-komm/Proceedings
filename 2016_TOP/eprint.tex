@@ -92,24 +92,33 @@ To extract the signal yield as a function of the reconstructed top quark \pt and
 \caption{\label{fig:mtwbdt}Distributions of (left)~the transverse W boson mass and (right)~the BDT discriminant after requiring $\mtw>50~\mathrm{GeV}$.}
 \end{figure}
 
-The distributions of the top quark \pt and $|y|$ at reconstruction level normalized to the inclusive fit result are shown in Fig.~\ref{fig:recotop} in a signal-enhanced phase space defined by $\mtw>50~\mathrm{GeV}$ and $\mathrm{BDT}>0.6$. The distribution of the top quark rapidity agrees well with the prediction. However, a slight 
+The distributions of the top quark \pt and $|y|$ at reconstruction level normalized to the inclusive fit result are shown in Figs.~\ref{fig:recotop-pt} and~\ref{fig:recotop-y} in a signal-depleted (signal-enhanced) phase space defined by $\mtw>50~\mathrm{GeV}$ and $\mathrm{BDT}>0.6$ ($\mathrm{BDT}<0$). A good agreement is found for the background predictions in the signal-depleted phase space for both observables. In the signal-enhanced phase space, the distribution of the top quark rapidity agrees well with the prediction. However, data is displaying a slightly harder top quark \pt spectrum compared to the prediction.
 
 \begin{figure}[th]
 \begin{center}
-\includegraphics[width=0.45\textwidth]{figures/unfolding/reco_toppt_bdt.pdf}\hspace{0.05\textwidth}
+\includegraphics[width=0.45\textwidth]{figures/unfolding/reco_toppt_bdtinv.pdf}\hspace{0.05\textwidth}
+\includegraphics[width=0.45\textwidth]{figures/unfolding/reco_toppt_bdt.pdf}
+\end{center}
+
+\caption{\label{fig:recotop-pt}Distributions of the top quark transverse momentum for events passing $\mtw>50~\mathrm{GeV}$: (left)~signal-depleted phase space, $\mathrm{BDT}<0$, and (right)~signal-enhanced phase space, $\mathrm{BDT}>0.6$. Predictions are normalized to the inclusive fit result.}
+\end{figure}
+
+\begin{figure}[th]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{figures/unfolding/reco_topy_bdtinv.pdf}\hspace{0.05\textwidth}
 \includegraphics[width=0.45\textwidth]{figures/unfolding/reco_topy_bdt.pdf}
 \end{center}
 
-\caption{\label{fig:recotop}Distributions of the top quark (left)~transverse momentum and (right)~rapidity in a signal-enhanced phase space defined by $\mtw>50~\mathrm{GeV}$ and $\mathrm{BDT}>0.6$. Predictions are normalized to the inclusive fit result.}
+\caption{\label{fig:recotop-y}Distributions of the top quark rapidity for events passing $\mtw>50~\mathrm{GeV}$: (left)~signal-depleted phase space, $\mathrm{BDT}<0$, and (right)~signal-enhanced phase space, $\mathrm{BDT}>0.6$. Predictions are normalized to the inclusive fit result.}
 \end{figure}
 
 To infer the corresponding parton-level differential cross sections, the exclusive fit results are passed to an unfolding procedure. Regularized unfolding based on the curvature of the unfolded spectrum as implemented in the \tunfold package~\cite{tunfold} is used. 
 
-The measurement is affected by various sources of systematics. 
-
-
+The measurement is affected by various sources of systematic uncertainties. New templates for signal and background processes are derived reflecting the impact of each uncertainty source on the predictions. For each systematic variation, the fit and unfolding procedures are repeated using the new templates. The cross sections and their uncertainties are taken from the combination of all variations per bin. The individual uncertainty sources with the largest impact on the measurement are found to be the data statistics~(10\%-25\%), the choice of renormalization and factorization scale of the signal process~(10\%-15\%), the top-quark mass~(10\%-20\%), and the jet energy corrections~(10\%-15\%).
 
 \section{Results}
+
+The measured differential cross section of t-channel single-top-quark production are shown in Fig.~\ref{fig:result} normalized to the inclusive cross section. The results are compared to the predictions by various generator~(a\textsc{mc@nlo}, \textsc{powheg}), parton shower~(\textsc{pythia}8, \textsc{herwig}), and flavour-scheme combinations. The unfolded data is found in agreement with the predictions within the uncertainties.
 
 \begin{figure}[th]
 \begin{center}
@@ -117,16 +126,14 @@ The measurement is affected by various sources of systematics.
 \includegraphics[width=0.45\textwidth]{figures/result/unfolded_top_y.pdf}
 \end{center}
 
-\caption{Normalized differential t-channel single-top-quark cross section as a function of the parton-level top quark (left)~transverse momentum and (right)~rapidity.}
+\caption{\label{fig:result}Normalized differential t-channel single-top-quark cross section as a function of the parton-level top quark (left)~transverse momentum and (right)~rapidity.}
 \end{figure}
 
 
 
 \section{Conclusion}
 
-
-
-
+A first measurement of t-channel single-top-quark differential cross section as a function of the top quark transverse momentum and rapidity has been performed at at $\sqrt{s}=13~\mathrm{TeV}$ using pp collision data corresponding to $2.3~\mathrm{fb}^{-1}$. The results are compared to the predictions by various generators. No significant deviation is observed.
 
 \begin{thebibliography}{99}
 
