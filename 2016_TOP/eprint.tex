@@ -53,7 +53,7 @@ Universit\'e catholique de Louvain, B-1348 Louvain-la-Neuve, BELGIUM}
 \Address{\institute}
 \vfill
 \begin{Abstract}
-The production of single top quarks is a cornerstone in understanding the nature of the heaviest known elementary particle and its involvement in electroweak interactions. An early differential cross section measurement of t-channel single-top-quark production is presented. Collision data at a center-of-mass energy of $13~\mathrm{TeV}$ collected in 2015 were analyzed, corresponding to $2.3~\mathrm{fb}^{-1}$. The amount of signal events as a function of the top quark transverse momentum and rapidity is estimated by multiple fits using a multivariate discriminant. The results are unfolded to parton level and compared to predictions by various Monte-Carlo generators.
+The production of single top quarks is a cornerstone in understanding the nature of the heaviest known elementary particle and its involvement in electroweak interactions. An early differential cross section measurement of t-channel single-top-quark production is presented. Proton-Proton collision data at a center-of-mass energy of $13~\mathrm{TeV}$ collected in 2015 were analyzed, corresponding to $2.3~\mathrm{fb}^{-1}$. The amount of signal events as a function of the top quark transverse momentum and rapidity is estimated using a multivariate discriminant. The results are unfolded to parton level and compared to predictions by various Monte-Carlo generators.
 \end{Abstract}
 \vfill
 \begin{Presented}
@@ -68,20 +68,20 @@ Olomouc, Czech Republic,  September 19--23, 2016
 
 \section{Introduction}
 
-Cross section measurements of single top quark production allow to study electroweak interactions involving heavy quarks. For example, precise inclusive cross section measurements can yield model-independent limits on the CKM matrix element, $\mathrm{V}_\mathrm{tb}$, whereas differential measurements can test theoretical calculations and predictions by generators in great detail.
+Cross section measurements of single top quark production allow to study electroweak interactions involving heavy quarks. For example, precise inclusive cross section measurements can yield model-independent limits on the CKM matrix element, $\mathrm{V}_\mathrm{tb}$, whereas differential measurements can test theoretical calculations and predictions by generators in great detail~\cite{TOP-16-003,TOP-14-004}.
 
-In this note, a first differential cross section of t-channel single-top-quark production as a function of the top quark \pt and rapidity, $y=\frac{1}{2}\ln[(E+p_{z})/(E-p_{z})]$, is presented, using the first pp collision data recorded by the CMS experiment in 2015 at $\sqrt{s}=13~\mathrm{TeV}$ corresponding to $2.3~\mathrm{fb}^{-1}$. It is based on Ref.~\cite{TOP-16-004}.
+In this note, a first differential cross section of t-channel single-top-quark production as a function of the top quark \pt and rapidity, $y=\frac{1}{2}\ln[(E+p_{z})/(E-p_{z})]$, is summarized, using the first pp collision data at $\sqrt{s}=13~\mathrm{TeV}$ recorded by the CMS experiment in 2015 corresponding to $2.3~\mathrm{fb}^{-1}$. More details can be found in Ref.~\cite{TOP-16-004}.
 
 \section{Event selection}
 
-The measurement focuses on single top quarks decaying to a b jet, a muon, and a neutrino. The t-channel production signature consists furthermore of a light, spectator quark~(u/d/s) which is characteristically scattered into the forward detector region. Muon candidates are required to be well-isolated with a transverse momentum of $\pt>22~\mathrm{GeV}$ within a pseudorapidity range of $|\eta|<2.4$. Jets with $\pt>40~\mathrm{GeV}$ are selected within $|\eta|<4.7$. A b-tagging algorithm is employed for jets within $|\eta|<2.4$ based on a multivariate discriminant to identify b jets from top quark decays. A selection on the transverse W boson mass of $\mtw>50~\mathrm{GeV}$ is applied discriminate against multijet events. In addition to the signal region~(2~jets, 1~b-tag), events from two control regions containing 3~jets with 1~or 2~b-tags are considered. These are enriched in \ttbar events which is the main background of this measurement.
+The measurement focuses on single top quarks decaying into a b jet, a muon, and a neutrino. The t-channel production signature consists furthermore of a light~(u/d/s), spectator quark which is characteristically scattered into the forward detector region. Muon candidates are required to be well-isolated with a transverse momentum of $\pt>22~\mathrm{GeV}$ within a pseudorapidity range of $|\eta|<2.4$. Jets with $\pt>40~\mathrm{GeV}$ are selected within $|\eta|<4.7$. A b-tagging algorithm is employed for jets within $|\eta|<2.4$ based on a multivariate discriminant to identify jets originating from hadronizing b quarks. A selection on the transverse W boson mass of $\mtw>50~\mathrm{GeV}$ is applied to reduce the contamination of multijet events. In addition to the signal region~(2~jets, 1~b-tag), events from two control regions containing 3~jets with 1~or 2~b-tags are considered. These are enriched in \ttbar events which is the main background of this measurement.
 
 
 \section{Signal extraction}
 
-A neutrino candidate is found by solving for the unknown $p_{z}^{\nu}$ momentum under a W boson mass constraint, $m_{W}^{2}=(p_{\mu}+p_{\nu})^{2}$. The 4-momentum of a top quark candidate can then be reconstructed from the reconstructed decay products.
+A neutrino candidate is found by solving for the unknown $p_{z}^{\nu}$ momentum using a W boson mass constraint, $m_{W}^{2}=(p_{\mu}+p_{\nu})^{2}$. The 4-momentum of a top quark candidate can then be reconstructed from the reconstructed decay products.
 
-To extract the signal yield as a function of the reconstructed top quark \pt and $|y|$, multiple, exclusive maximum likelihood fits are performed. The fits utilize an extended likelihood using the $\mtw$ shape for events with $\mtw<50~\mathrm{GeV}$ and the shape of a Boosted Decision Tree~(BDT) discriminant otherwise. The BDT is trained to discriminate signal against \ttbar and \wjets events by exploiting the following event observables: $\mtop$, $|\eta_\mathrm{light~jet}|$, $\Delta R(\mathrm{b\mbox{-}jet,~light~jet})$, $|\Delta\eta(\mathrm{b\mbox{-}jet,\mu})|$, and \mtw. The low $\mtw$ region is particularly sensitive to the multijet contribution whose shape is estimated from data using a sideband with inverted muon isolation. Figure~\ref{fig:mtwbdt} shows the $\mtw$ and BDT distributions after scaling the predictions to the inclusive fit result. A good agreement is observed.
+To extract the signal yield as a function of the reconstructed top quark \pt and $|y|$, multiple, exclusive maximum likelihood fits are performed in bins of the measurement. The fits utilize an extended likelihood using the $\mtw$ shape for events with $\mtw<50~\mathrm{GeV}$ and the shape of a Boosted Decision Tree~(BDT) discriminant otherwise. The BDT is trained to discriminate signal against \ttbar and \wjets events by exploiting the following event observables: $\mtop$, $|\eta_\mathrm{light~jet}|$, $\Delta R(\mathrm{b\mbox{-}jet,~light~jet})$, $|\Delta\eta(\mathrm{b\mbox{-}jet,\mu})|$, and \mtw. The low $\mtw$ region is particularly sensitive to the multijet contribution whose shape is estimated from data using a sideband with inverted muon isolation. Figure~\ref{fig:mtwbdt} shows the $\mtw$ and BDT distributions after scaling the predictions to the inclusive fit result. A good agreement between data and predictions is observed.
 
 \begin{figure}[th]
 \begin{center}
@@ -89,10 +89,10 @@ To extract the signal yield as a function of the reconstructed top quark \pt and
 \includegraphics[width=0.45\textwidth]{figures/fit/reco_BDT.pdf}
 \end{center}
 
-\caption{\label{fig:mtwbdt}Distributions of (left)~the transverse W boson mass and (right)~the BDT discriminant after requiring $\mtw>50~\mathrm{GeV}$.}
+\caption{\label{fig:mtwbdt}Distributions of (left)~the transverse W boson mass and (right)~the BDT discriminant while requiring $\mtw>50~\mathrm{GeV}$.}
 \end{figure}
 
-The distributions of the top quark \pt and $|y|$ at reconstruction level normalized to the inclusive fit result are shown in Figs.~\ref{fig:recotop-pt} and~\ref{fig:recotop-y} in a signal-depleted (signal-enhanced) phase space defined by $\mtw>50~\mathrm{GeV}$ and $\mathrm{BDT}>0.6$ ($\mathrm{BDT}<0$). A good agreement is found for the background predictions in the signal-depleted phase space for both observables. In the signal-enhanced phase space, the distribution of the top quark rapidity agrees well with the prediction. However, data is displaying a slightly harder top quark \pt spectrum compared to the prediction.
+The distributions of the top quark \pt and $|y|$ at reconstruction level are shown in Figs.~\ref{fig:recotop-pt} and~\ref{fig:recotop-y}. A signal-depleted (signal-enhanced) phase space is defined by $\mtw>50~\mathrm{GeV}$ and $\mathrm{BDT}>0.6$ ($\mathrm{BDT}<0$) and shown on the left (right), respectively. A good agreement is found for the background predictions in the signal-depleted phase space for both observables. In the signal-enhanced phase space, the distribution of the top quark rapidity agrees well with the prediction. However, data is displaying a slightly harder top quark \pt spectrum compared to the prediction.
 
 \begin{figure}[th]
 \begin{center}
@@ -112,13 +112,13 @@ The distributions of the top quark \pt and $|y|$ at reconstruction level normali
 \caption{\label{fig:recotop-y}Distributions of the top quark rapidity for events passing $\mtw>50~\mathrm{GeV}$: (left)~signal-depleted phase space, $\mathrm{BDT}<0$, and (right)~signal-enhanced phase space, $\mathrm{BDT}>0.6$. Predictions are normalized to the inclusive fit result.}
 \end{figure}
 
-To infer the corresponding parton-level differential cross sections, the exclusive fit results are passed to an unfolding procedure. Regularized unfolding based on the curvature of the unfolded spectrum as implemented in the \tunfold package~\cite{tunfold} is used. 
+To infer the corresponding parton-level differential cross sections, the exclusive fit results are passed to an unfolding procedure. Regularized unfolding based on the curvature of the unfolded spectrum as implemented in the \tunfold package~\cite{tunfold} is employed. 
 
 The measurement is affected by various sources of systematic uncertainties. New templates for signal and background processes are derived reflecting the impact of each uncertainty source on the predictions. For each systematic variation, the fit and unfolding procedures are repeated using the new templates. The cross sections and their uncertainties are taken from the combination of all variations per bin. The individual uncertainty sources with the largest impact on the measurement are found to be the data statistics~(10\%-25\%), the choice of renormalization and factorization scale of the signal process~(10\%-15\%), the top-quark mass~(10\%-20\%), and the jet energy corrections~(10\%-15\%).
 
 \section{Results}
 
-The measured differential cross section of t-channel single-top-quark production are shown in Fig.~\ref{fig:result} normalized to the inclusive cross section. The results are compared to the predictions by various generator~(a\textsc{mc@nlo}, \textsc{powheg}), parton shower~(\textsc{pythia}8, \textsc{herwig}), and flavour-scheme combinations. The unfolded data is found in agreement with the predictions within the uncertainties.
+The measured differential cross section of t-channel single-top-quark production are shown in Fig.~\ref{fig:result} normalized to the inclusive cross section. The results are compared to the predictions by various generators~(a\textsc{mc@nlo}, \textsc{powheg}), parton showers~(\textsc{pythia}8, \textsc{herwig}), and flavour-scheme combinations. The unfolded data is found in agreement with the predictions within the uncertainties.
 
 \begin{figure}[th]
 \begin{center}
@@ -133,10 +133,12 @@ The measured differential cross section of t-channel single-top-quark production
 
 \section{Conclusion}
 
-A first measurement of t-channel single-top-quark differential cross section as a function of the top quark transverse momentum and rapidity has been performed at at $\sqrt{s}=13~\mathrm{TeV}$ using pp collision data corresponding to $2.3~\mathrm{fb}^{-1}$. The results are compared to the predictions by various generators. No significant deviation is observed.
+A first measurement of t-channel single-top-quark differential cross section as a function of the top quark transverse momentum and rapidity has been performed using pp collision data at $\sqrt{s}=13~\mathrm{TeV}$ corresponding to $2.3~\mathrm{fb}^{-1}$. The results are compared to the predictions by various generators. No significant deviation is observed.
 
 \begin{thebibliography}{99}
 
+\bibitem{TOP-16-003} CMS Collaboration, \emph{submitted to PRL} CMS-TOP-16-003 (2016).
+\bibitem{TOP-14-004} CMS Collaboration, \emph{CMS Physics Analysis Summary} CMS-TOP-14-004 (2014).
 \bibitem{TOP-16-004} CMS Collaboration, \emph{CMS Physics Analysis Summary} CMS-TOP-16-004 (2016).
 \bibitem{tunfold} S. Schmitt, \emph{JINST} \textbf{7} (2012) T10003.
 
