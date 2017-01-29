@@ -20,7 +20,7 @@ Simulated samples of various physics processes are a key ingredient within analy
 \section{Introduction}
 Tracking of charged particles is one of the crucial ingredients to understand the physics behind LHC collisions. From reconstructed tracks higher analysis level objects like jets and the missing transverse energy are derived. In the CMS experiment, tracks are utilized even further by matching them to information gathered by other subdetectors improving the overall event reconstruction and resolution.
 
-Sophisticated tracking algorithms are required to reconstruct tracks from the large amount of charged particles transversing the CMS detector at each bunch crossing. A typical instantaneous luminosity of $10^{34}\,\mathrm{cm}^{-2}\mathrm{s}^{-1}$ which was reached in 2016 can lead to more than 500 reconstructed tracks originating from 20--30 proton-proton interactions per event.
+Sophisticated tracking algorithms are required to reconstruct tracks from the large amount of charged particles transversing the CMS detector at each bunch crossing. A typical instantaneous luminosity of $10^{34}\,\mathrm{cm}^{-2}\mathrm{s}^{-1}$ which was reached in 2016 can lead to more than 500 reconstructed tracks originating from 20--30 proton-proton interactions per crossing.
 
 The complex, multistep algorithms which reconstruct tracks from energy depositions left by transversing charged particles in the CMS tracker are unsurprisingly very computing-intense. This standard tracking procedure is applied to simulated events as well after those have passed the emulation of the electronic response of the detector. However, at this point in the simulation chain it can be beneficial to sidestep the standard reconstruction by utilizing truth-information about the simulated events instead. In the CMS simulation framework this idea together with others has lead to a fast alternative for simulating physics events called \textsc{FastSimulation}. 
 
@@ -42,9 +42,9 @@ More information on the standard track reconstruction can be found in Ref.~\cite
 
 \section{Emulation of tracking reconstruction}
 
-The intend of the \textsc{FastSimulation} package of CMS is to provide a fast alternative to the standard simulation and reconstruction work flow while delivering high-level analysis objects for  analyses with sufficient accuracy. It is tightly integrated into the CMS software~\cite{cmssw} where certain parts of the production chain for simulated event samples are sidestepped. The two major CPU-intense parts which are replaced in a \textsc{FastSimulation} are the Geant4-based simulation of particle interactions with the detector material and the track reconstruction. The final analysis objects are indistinguishable from the ones produced by the standard simulation work flow. This enables an easy integration of \textsc{FastSimulation} samples in analyses along standard ones.
+The intend of the \textsc{FastSimulation} package of CMS is to provide a fast alternative to the standard simulation and reconstruction work flow while delivering high-level analysis objects for analyses with sufficient accuracy. It is tightly integrated into the CMS software~\cite{cmssw} where certain parts in the production of simulated event samples are sidestepped. The two major CPU-intense parts which are replaced in a \textsc{FastSimulation} are the Geant4-based simulation of particle interactions with the detector material and the track reconstruction. The final analysis objects are indistinguishable from the ones produced by the standard simulation work flow. This enables an easy integration of \textsc{FastSimulation} samples in analyses along standard ones.
 
-Since only a parameterized simulation of material interactions is utilized no detailed information of charge deposition on the pixel and strip modules is generated. The true hit positions are instead smeared to mimic the resolutions of the standard hit reconstruction. A new \textsc{FastSimulation} module for position smearing was recently developed which allows to manage various algorithms for position smearing side-by-side. It can be flexibly configured for any topology of the tracker. Additionally, each algorithm can be restricted to certain tracker modules only. Currently, a simple Gaussian smearing of the position is deployed for all strip modules where the configured resolution depends on the specific tracker subdetector and its layer. A more detailed emulation of hit reconstruction is employed for the pixel modules where parametrized distributions from the standard template-based hit reconstruction are utilized for the smearing. Furthermore, the new module allows the emulation of merging of two hits which occurs when the distributions of the charge depositions from close tracks overlap. Figure~\ref{fig:merge} shows a recent study of the probability of hit merging on the pixel modules which will be integrated soon.
+Since only a parameterized simulation of material interactions is utilized no detailed information of charge deposition on the pixel and strip modules is generated. The true hit positions are instead smeared to mimic the resolutions of the standard hit reconstruction. A new \textsc{FastSimulation} module for position smearing was recently developed which allows to manage various algorithms for position smearing side-by-side. It can be flexibly configured for any topology of the tracker. Additionally, each algorithm can be restricted to certain tracker modules only. Currently, a simple Gaussian smearing of the position is deployed for all strip modules where the configured resolution depends on the specific tracker subdetector and its layer. A more detailed emulation of hit reconstruction is employed for the pixel modules where parametrized distributions from the standard template-based hit reconstruction are utilized for the smearing. Furthermore, the new module allows the emulation of merging of two hits which occurs when the distributions of the charge depositions from close tracks overlap. Figure~\ref{fig:merge} shows a recent study of the probability of hit merging on the pixel modules. It is planned to utilize such probability maps for the emulation of hit merging in the future.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -53,31 +53,41 @@ Since only a parameterized simulation of material interactions is utilized no de
 \end{center}
 \end{figure}
 
-The iterative tracking sequence is replaced within \textsc{FastSimulation} as well.
+By default, the seeding and trajectory building modules of the iterative tracking sequence are replaced complete within \textsc{FastSimulation}. The ability to produce merged hits originating from multiple particle tracks necessitated a recent refactoring of the \textsc{FastSimulation}-specific data objects within the iterative tracking sequence. As motivated in the introduction, the main idea of sidestepping the reconstruction by using truth information about the origin of hits remains but had to be extended. Instead of a one-to-one mapping of reconstructed hits to tracks, a hit can now be share between tracks. A further benefit is that the mapping itself can be generated independently from the truth information which allows the emulation of wrong hit combinations leading to ``fake'' tracks in the future.
+
+The seeding of trajectories and the trajectory building are restricted to a combination of hits at a time. This removes completely any combinatorial problem from the iterative tracking in \textsc{FastSimulation} resulting in a large reduction of computing time compared to the standard reconstruction. In the seeding step, the acceptance requirements are enforced by interfacing directly with the implemented criteria in the standard seeding step per iteration. The trajectory building process is trivial since the complete hit combination per track has already been defined. Finally, the track is fitted using the standard fit algorithm and the used hits are masked in next iterations.
+
+For the simulation of pileup interactions, additional minimum bias events are first premixed according to the desired pileup scenario and then added to the events at random. In \textsc{FastSimulation}, tracks are already reconstructed in the premixed sample and then included in the event directly without interfering with the hit and track reconstruction of the main interaction.
 
 
 \section{Validation}
+
+The track reconstruction within \textsc{FastSimulation} is validated by comparing the produced tracks against the result from the standard simulation work flow. Figure~\ref{fig:eff-tracks} presents the tracking efficiency as a function of the transverse momentum and pseudorapidity. Here, the tracking efficiency is defined as the ratio of reconstructed tracks matched to simulated charged particles over the total number of charged particles within the tracker volume. Furthermore, the obtained resolution of the transverse momentum for reconstructed tracks is shown in Fig.~\ref{fig:res-track}. Overall, a good agreement is achieved where the largest differences are at the 10\% level.
 
 \begin{figure}[htbp]
 \begin{center}
 \parbox{0.46\textwidth}{\centering\includegraphics[width=0.45\textwidth]{figures/eff_pt.pdf}\\(a)}
 \hspace{0.05\textwidth}
 \parbox{0.46\textwidth}{\centering\includegraphics[width=0.45\textwidth]{figures/eff_eta.pdf}\\(b)}
-\caption{Comparion of the reconstruction efficiencies of tracks as a function of (a)~the transverse momentum and (b)~the pseudorapidity.}
+\caption{\label{fig:eff-tracks}Comparison of the reconstruction efficiencies of tracks as a function of (a)~the transverse momentum and (b)~the pseudorapidity measured in top quark pair production at 13~TeV.}
 \end{center}
 \end{figure}
 
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures/res_pt.pdf}
-\caption{Comparion of the resolution of reconstructed tracks as a function of the transverse momentum.}
+\caption{\label{fig:res-track}Comparion of the resolution of reconstructed tracks as a function of the transverse momentum measured in top quark pair production at 13~TeV.}
 \end{center}
 \end{figure}
+
+A profile of the average CPU-time consumption per event within \textsc{FastSimulation} is displayed in Fig.~\ref{fig:cpu} as a function of the average number of pileup interactions. Less than 10~s are required to simulated an event of top quark pair production for current pileup scenario.
+
+
 
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.55\textwidth]{figures/cpu_profile.pdf}
-\caption{Average CPU-time per event for simulation and reconstruction within \textsc{FastSimulation} as a function of the average number of pileup interactions.}
+\caption{\label{fig:cpu}Average CPU-time per event spend on the detector simulation and the reconstruction of analysis objects within \textsc{FastSimulation} as a function of the average number of pileup interactions measured in top quark pair production at 13~TeV.}
 \end{center}
 \end{figure}
 
@@ -96,16 +106,6 @@ The author thanks the organizers of the \textsc{CHEP2016} conference for the pos
 \bibitem{pixelphase1} CMS Collaboration 2012, {\it CMS Tech. Design Rep.} CMS-TDR-11.
 \bibitem{cmssw} CMS Collaboration 2006, {\it CMS Tech. Design Rep.} CMS-TDR-8-1.
 
-%\item Strite S and Morkoc H 1992 {\it J. Vac. Sci. Technol.} B {\bf 10} 1237 
-%\item Jain S C, Willander M, Narayan J and van Overstraeten R 2000 
-%{\it J. Appl. Phys}. {\bf 87} 965 
-%\item Nakamura S, Senoh M, Nagahama S, Iwase N, Yamada T, Matsushita T, Kiyoku H 
-%and 	Sugimoto Y 1996 {\it Japan. J. Appl. Phys.} {\bf 35} L74 
-%\item Akasaki I, Sota S, Sakai H, Tanaka T, Koike M and Amano H 1996 
-%{\it Electron. Lett.} {\bf 32} 1105 
-%\item O'Leary S K, Foutz B E, Shur M S, Bhapkar U V and Eastman L F 1998 
-%{\it J. Appl. Phys.} {\bf 83} 826 
-%\item Jenkins D W and Dow J D 1989 {\it Phys. Rev.} B {\bf 39} 3317 
 \end{thebibliography}
 
 \end{document}
