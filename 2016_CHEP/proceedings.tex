@@ -1,5 +1,7 @@
 \documentclass[a4paper]{jpconf}
 \usepackage{graphicx}
+\usepackage[color=white,linecolor=red,bordercolor=red,textsize
+=small]{todonotes}
 \begin{document}
 \title{Fast emulation of track reconstruction in CMS simulation}
 
@@ -14,6 +16,7 @@ Universit\'e catholique de Louvain, Louvain-la-Neuve, BELGIUM}
 Simulated samples of various physics processes are a key ingredient within analyses to unlock the physics behind LHC collision data. Samples with more and more statistics are required to keep up with the increasing amounts of recorded data. During sample generation, significant computing time is spent on the reconstruction of charged particle tracks from energy deposits which additionally scales with the pileup conditions. In CMS, the FastSimulation package is developed providing a fast alternative to the standard simulation and reconstruction work flow. It employs various techniques to emulate track reconstruction effects in particle collision events amongst others. Several analysis groups in CMS are utilizing the package, in particular those requiring many samples to scan the parameter space of physics models (e.g. SUSY) or for the purpose of estimating systematic uncertainties. The strategies for and recent developments in this emulation are presented which features a novel, flexible implementation of tracking emulation while retaining a sufficient, tuneable accuracy.
 \end{abstract}
 
+
 \section{Introduction}
 Tracking of charged particles is one of the crucial ingredients to understand the physics behind LHC collisions. From reconstructed tracks higher analysis level objects like jets and the missing transverse energy are derived. In the CMS experiment, tracks are utilized even further by matching them to information gathered by other subdetectors improving the overall event reconstruction and resolution.
 
@@ -21,24 +24,37 @@ Sophisticated tracking algorithms are required to reconstruct tracks from the la
 
 The complex, multistep algorithms which reconstruct tracks from energy depositions left by transversing charged particles in the CMS tracker are unsurprisingly very computing-intense. This standard tracking procedure is applied to simulated events as well after those have passed the emulation of the electronic response of the detector. However, at this point in the simulation chain it can be beneficial to sidestep the standard reconstruction by utilizing truth-information about the simulated events instead. In the CMS simulation framework this idea together with others has lead to a fast alternative for simulating physics events called \textsc{FastSimulation}. 
 
-In the light of future beam intensity upgrades this fast alternative is further motivated since increasing number of additional interactions~(``pileup'') leading to more tracks ... ?
+In the light of future beam intensity upgrades this fast alternative is further motivated since increasing number of additional interactions~(``pileup'') leading to more tracks \todo{finish}
 
 Nowadays, the \textsc{FastSimulation} package is already successfully employed within CMS analyses. Typical use cases are searches for beyond the Standard Model physics such as SUSY. Such analyses require usually multiple signal samples which reflect various realizations of a new physics model. Other use cases are the evaluations of the impact arising from sources of systematic uncertainties on a measurement like a variation of the renormalization and factorization scales or the top quark mass. More general \textsc{FastSimulation} samples can used to enhance the statistics of existing samples used for training of multivariate analysis methods.
 
 This note is organized as follows: First, the steps involved in the standard track reconstruction are described briefly. Then, their alternative implementation within the \textsc{FastSimulation} package is detailed with an emphasis on new developments in its tracking emulation. After the validation where the obtained tracking performances are compared this note is summarized and an outlook on planned developments is provided.
 
+
 \section{Standard track reconstruction within CMS}
 
-The standard reconstruction of tracks from charge deposits starts by 
+The standard reconstruction begins with the forming of hits on the pixel and strip modules of the tracker. Dedicated templates of charge depositions from simulation are compared to data to infer the position of a hit on a pixel module~\cite{pixelav}. On the strips modules, hits are seeded from strips and subsequently combined with adjacent ones if their channel readout is sufficiently above their noise level.
+
+The reconstructed hits are then passed to the iterative tracking sequence. After each iteration the hits within tracks that pass certain quality requirements are masked in next iterations. Currently there are eight iterations deployed which will however be adapted after the upgrade of the pixel detector in 2017~\cite{pixelphase1}. The first iterations target easy-identifiable, non-displaced tracks with respect to the interaction region whereas the latter iterations are designed for more complicated situations. Seeds are build from hit doublets or triplets on specific tracker layers which pass an iteration-dependent acceptance selection. Then, trajectories are constructed through the combinatorial track finder~(CTF) algorithm which tries to locate seed-compatible hits on other layers. It is based on Kalman filters and pattern recognition techniques.  Finally, the track parameters are estimated from a fit to the hit positions using a Runge-Kutta-based propagator which accounts for material effects and the inhomogeneous magnetic field.
+
+More information on the standard track reconstruction can be found in Ref.~\cite{trackreco}.
+
 
 \section{Emulation of tracking reconstruction}
+
+The intend of the \textsc{FastSimulation} package of CMS is to provide a fast alternative to the standard simulation and reconstruction work flow while delivering high-level analysis objects for  analyses with sufficient accuracy. It is tightly integrated into the CMS software~\cite{cmssw} where certain parts of the production chain for simulated event samples are sidestepped. The two major CPU-intense parts which are replaced in a \textsc{FastSimulation} are the Geant4-based simulation of particle interactions with the detector material and the track reconstruction. The final analysis objects are indistinguishable from the ones produced by the standard simulation work flow. This enables an easy integration of \textsc{FastSimulation} samples in analyses along standard ones.
+
+Since only a parameterized simulation of material interactions is utilized no detailed information of charge deposition on the pixel and strip modules is generated. The true hit positions are instead smeared to mimic the resolutions of the standard hit reconstruction. A new \textsc{FastSimulation} module for position smearing was recently developed which allows to manage various algorithms for position smearing side-by-side. It can be flexibly configured for any topology of the tracker. Additionally, each algorithm can be restricted to certain tracker modules only. Currently, a simple Gaussian smearing of the position is deployed for all strip modules where the configured resolution depends on the specific tracker subdetector and its layer. A more detailed emulation of hit reconstruction is employed for the pixel modules where parametrized distributions from the standard template-based hit reconstruction are utilized for the smearing. Furthermore, the new module allows the emulation of merging of two hits which occurs when the distributions of the charge depositions from close tracks overlap. Figure~\ref{fig:merge} shows a recent study of the probability of hit merging on the pixel modules which will be integrated soon.
 
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.4\textwidth]{figures/merge.pdf}
-\caption{Probability of two hits merging on the pixel modules as a function of the distance and local incident angle expressed as pseudorapidity.}
+\caption{\label{fig:merge}Probability of two hits merging on the pixel barrel modules as a function of their distance and local incident angle of a track expressed in pseudorapidity.}
 \end{center}
 \end{figure}
+
+The iterative tracking sequence is replaced within \textsc{FastSimulation} as well.
+
 
 \section{Validation}
 
@@ -61,21 +77,24 @@ The standard reconstruction of tracks from charge deposits starts by
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.55\textwidth]{figures/cpu_profile.pdf}
-\caption{Average CPU-time per event for simulation and reconstruction within \textsc{FastSimulation} with as a function of the average number of pileup interactions.}
+\caption{Average CPU-time per event for simulation and reconstruction within \textsc{FastSimulation} as a function of the average number of pileup interactions.}
 \end{center}
 \end{figure}
 
-\section{Summary and outlook}
+\section{Conclusion and outlook}
+
+phaseI and II readyness; new geometry
 
 \ack
-The author thanks the organizers of the \textsc{CHEP2016} conference for the possibility of a poster presentation. Furthermore, funding is gratefully accepted from Fonds National de Recherche Scientifique~(FNRS), Belgium.
+The author thanks the organizers of the \textsc{CHEP2016} conference for the possibility of a poster presentation. Funding is gratefully accepted from Fonds National de Recherche Scientifique~(FNRS), Belgium.
 
 
 \section{References}
-
-\begin{thebibliography}{9}
-\item CMS Collaboration 2014, {\it JINST} \textbf{9} no.10, P10009.
-
+\begin{thebibliography}{99}
+\bibitem{pixelav} M. Swartz 2003, {\it Nucl. Instrum. Meth.} A \textbf{511} 88.
+\bibitem{trackreco} CMS Collaboration 2014, {\it JINST} \textbf{9} no.10, P10009.
+\bibitem{pixelphase1} CMS Collaboration 2012, {\it CMS Tech. Design Rep.} CMS-TDR-11.
+\bibitem{cmssw} CMS Collaboration 2006, {\it CMS Tech. Design Rep.} CMS-TDR-8-1.
 
 %\item Strite S and Morkoc H 1992 {\it J. Vac. Sci. Technol.} B {\bf 10} 1237 
 %\item Jain S C, Willander M, Narayan J and van Overstraeten R 2000 
