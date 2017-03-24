@@ -802,6 +802,21 @@
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
          transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
     </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6771-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -810,9 +825,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="1109.4579"
-     inkscape:cy="519.55357"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="710.96341"
+     inkscape:cy="163.42646"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1070,7 +1085,7 @@
        xml:space="preserve"
        id="flowRoot4991-5-8-9-6-6"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.30000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       transform="translate(522.64421,-254.60608)"><flowRegion
+       transform="translate(510.64421,-254.60608)"><flowRegion
          id="flowRegion4993-4-7-6-9-1"><rect
            id="rect4995-8-8-1-7-4"
            width="1270.7377"
@@ -1079,7 +1094,7 @@
            y="1164.5874"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
          id="flowPara5023-1-0-8-5-1"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">3. create hit</flowPara></flowRoot>    <path
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">3. create map:</flowPara></flowRoot>    <path
        style="display:inline;opacity:1;fill:#3366cc;fill-rule:evenodd;stroke:#000000;stroke-width:4.50000048;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 683.86554,863.42595 253.99326,0"
        id="path4907-3-7-6-8"
@@ -1253,7 +1268,7 @@
            y="1164.5874"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
          id="flowPara5023-1-0-8-5-1-8"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">4. track reconstruction</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">4. track seeding &amp; fit</flowPara><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="flowPara6584" /></flowRoot>    <path
        style="display:inline;opacity:1;fill:#3366cc;fill-rule:evenodd;stroke:#000000;stroke-width:4.50000048;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1391,7 +1406,7 @@
          sodipodi:role="line"
          id="tspan6700"
          x="1117.1429"
-         y="1149.5051"></tspan></text>
+         y="1149.5051" /></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4991-5-8-9-6-6-2-1"
@@ -1405,7 +1420,7 @@
            y="1164.5874"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
          id="flowPara5023-1-0-8-5-1-8-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">per subset</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">per mapped subset</flowPara><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="flowPara6584-5" /></flowRoot>    <flowRoot
        xml:space="preserve"
@@ -1444,7 +1459,7 @@
        xml:space="preserve"
        id="flowRoot4991-5-8-9-6-6-4"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.30000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       transform="translate(571.08841,-206.88642)"><flowRegion
+       transform="translate(559.08841,-206.88642)"><flowRegion
          id="flowRegion4993-4-7-6-9-1-6"><rect
            id="rect4995-8-8-1-7-4-2"
            width="1270.7377"
@@ -1453,21 +1468,21 @@
            y="1164.5874"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
          id="flowPara5023-1-0-8-5-1-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">subsets</flowPara></flowRoot>    <path
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">hit    truth-track</flowPara></flowRoot>    <path
        style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6.27086878;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:6.27086873, 12.54173744000000035;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker14260)"
        d="m 1244.2716,885.20358 c 78.0022,-170.81585 24.9996,-389.84892 24.9996,-389.84892"
        id="path5078-8-7-2-5-0-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6.04316282;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:6.04316275, 12.08632549000000012;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker14250)"
-       d="m 1344.3883,733.87376 c 33.7091,-97.59354 -5.3485,-231.94231 -5.3485,-231.94231"
+       style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6.04316282;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:6.04316275, 12.08632549;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker14250)"
+       d="m 1339.3375,733.87376 c 33.7091,-97.59354 -5.3485,-231.94231 -5.3485,-231.94231"
        id="path5078-8-7-2-5-4-2-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6.28657436;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:6.28657433, 12.57314865000000026;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker14042)"
-       d="m 1346.1796,733.57802 c 25.9416,-109.10312 99.3422,-235.28946 99.3422,-235.28946"
+       style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6.28657436;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:6.28657433, 12.57314865;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker14042)"
+       d="m 1348.1999,733.57802 c 25.9416,-109.10312 99.3422,-235.28946 99.3422,-235.28946"
        id="path5078-8-7-2-5-4-0-3-0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -1485,7 +1500,7 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.00000763px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
          id="flowPara5023-1-0-8-5-1-5-8-4"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.00000763px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">merged hits</flowPara></flowRoot>    <path
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#8c8c8c;stroke-width:3.00000009;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.00000009,9.00000027;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#8c8c8c;stroke-width:3.5000001;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.5000001,7.00000021;stroke-dashoffset:0;stroke-opacity:1"
        d="m 958.99369,612.35631 c -5.48431,0 -9.89948,4.4602 -9.89948,10.00045 l 0,68.56358 c -1.221,3.08086 -4.71062,5.29516 -8.85347,5.29516 l -62.09028,0 c -3.11519,0 -5.85529,-1.25682 -7.54642,-3.18764 l 0,-32.09713 c 0,-5.54025 -4.41517,-10.00045 -9.89949,-10.00045 l -48.78977,0 c -5.48432,0 -9.89949,4.4602 -9.89949,10.00045 l 0,91.43179 c 0,5.54024 4.41517,10.00044 9.89949,10.00044 l 48.78977,0 c 5.48432,0 9.89949,-4.4602 9.89949,-10.00044 l 0,-31.09709 c 1.69113,-1.93083 4.43123,-3.18764 7.54642,-3.18764 l 62.09028,0 c 4.33549,0 7.63595,2.44532 8.85347,5.74244 l 0,104.97536 c 0,5.54025 4.41517,10.00045 9.89948,10.00045 l 31.11184,0 c 5.48432,0 9.89947,-4.4602 9.89947,-10.00045 l 0,-206.43883 c 0,-5.54025 -4.41515,-10.00045 -9.89947,-10.00045 l -31.11184,0 z"
        id="rect8628"
        inkscape:connector-curvature="0" />
@@ -1503,7 +1518,7 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.00000763px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
          id="flowPara5023-1-0-8-5-1-5-8-4-8"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.00000763px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">shared hits</flowPara></flowRoot>    <path
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#8c8c8c;stroke-width:3.00000009;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.00000009,9.00000027;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#8c8c8c;stroke-width:3.5000001;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.5000001,7.00000021;stroke-dashoffset:0;stroke-opacity:1"
        d="m 1481.4121,620.2852 c -5.4843,0 -9.8995,4.4602 -9.8995,10.00045 l 0,60.56358 c -1.221,3.08086 -4.7106,5.29516 -8.8534,5.29516 l -62.0903,0 c -3.1152,0 -5.8553,-1.25682 -7.5464,-3.18764 l 0,-32.09713 c 0,-5.54025 -4.4152,-10.00045 -9.8995,-10.00045 l -48.7898,0 c -5.4843,0 -9.8995,4.4602 -9.8995,10.00045 l 0,91.43179 c 0,5.54024 4.4152,10.00044 9.8995,10.00044 l 48.7898,0 c 5.4843,0 9.8995,-4.4602 9.8995,-10.00044 l 0,-31.09709 c 1.6911,-1.93083 4.4312,-3.18764 7.5464,-3.18764 l 62.0903,0 c 4.3355,0 7.6359,2.44532 8.8534,5.74244 l 0,94.97536 c 0,5.54025 4.4152,10.00045 9.8995,10.00045 l 31.1119,0 c 5.4843,0 9.8995,-4.4602 9.8995,-10.00045 l 0,-188.43883 c 0,-5.54025 -4.4152,-10.00045 -9.8995,-10.00045 z"
        id="rect8628-0"
        inkscape:connector-curvature="0"
@@ -1522,9 +1537,14 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.00000763px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
          id="flowPara5023-1-0-8-5-1-5-8-4-9"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.00000763px;line-height:89.99999762%;font-family:'Browallia New';-inkscape-font-specification:'Browallia New, Normal';text-align:justify;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.30000004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">tracker layers</flowPara></flowRoot>    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.59620118;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.00000009;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
        d="m 22.26008,620.11758 0,-52.95649"
        id="path9016"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-9)"
+       d="m 788.7698,987.14962 25.24662,0"
+       id="path9016-6"
        inkscape:connector-curvature="0" />
   </g>
   <g
