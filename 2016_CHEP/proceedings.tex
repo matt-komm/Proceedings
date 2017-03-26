@@ -3,6 +3,9 @@
 \usepackage[color=white,linecolor=red,bordercolor=red,textsize
 =small]{todonotes}
 \usepackage{hyperref}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=nonfrench,factor=1100,stretch=15,shrink=15]{microtype}
+\SetTracking{encoding={*}, shape=sc}{0}
+
 \begin{document}
 \title{Fast emulation of track reconstruction in the CMS simulation}
 
@@ -35,7 +38,7 @@ This article is organized as follows: First, the steps involved in the standard 
 \section{Standard track reconstruction within CMS}
 The standard track reconstruction is applied to real data and to simulated events from the standard Geant4-based simulation. It begins with the forming of hits on the pixel and strip modules of the tracker. Dedicated templates of charge depositions from simulation are compared to data to infer the position of a hit on a pixel module~\cite{pixelav}. On the strip modules, hits are seeded from strips and subsequently combined with adjacent ones if their readout is sufficiently above their noise level.
 
-The reconstructed hits are then passed to the track reconstruction sequence which finds tracks iteratively. After each iteration the hits within the tracks that pass certain quality requirements are masked in next iterations to reduce the combinatorics. Currently, there are eight iterations deployed which will however be adapted after the upgrade of the pixel detector in 2017~\cite{pixelphase1}. The first iterations target easy-identifiable, non-displaced tracks with respect to the interaction region, whereas the later iterations are designed for more complicated situations. Seeds are built from hit doublets or triplets on specific tracker layers which pass an iteration-dependent acceptance selection. Then, trajectories are constructed through the combinatorial track finder~(CTF) algorithm which tries to locate seed-compatible hits on other layers. It is based on Kalman filters and pattern recognition techniques.  Finally, the track parameters are estimated from a fit to the hit positions using a Runge-Kutta-based propagator which accounts for material effects and the inhomogeneous magnetic field.
+The reconstructed hits are then passed to the track reconstruction sequence which finds tracks iteratively. After each iteration the hits within the tracks that pass certain quality requirements are masked in next iterations to reduce the combinatorics. Currently, there are eight iterations deployed which will however be adapted after the upgrade of the pixel detector in 2017~\cite{pixelphase1}. The first iterations target easy-identifiable, non-displaced tracks with respect to the interaction region, whereas the later iterations are designed for more complicated situations. Seeds are built from hit doublets or triplets on specific tracker layers which pass an iteration-dependent acceptance selection. Then, trajectories are constructed through the combinatorial track finder~(CTF) algorithm which tries to locate seed-compatible hits on other layers. It is based on Kalman filters and pattern recognition techniques.  Finally, the track parameters are estimated from a fit to the hit positions using a Runge-Kutta-based propagator which accounts for material effects and the inhomogeneous magnetic field. Tracks for analyses have to pass certain quality criteria depending on the iteration to reject ``fake'' tracks from spurious hit combinations. The fake rate is found to be about 5--15\% depending on the momentum and particle type in the standard simulation and reconstruction.
 
 More information on the standard track reconstruction can be found in Ref.~\cite{trackreco}.
 
@@ -51,7 +54,7 @@ In \textsc{FastSimulation}, the simulation of energy loss of particles as they t
 \end{center}
 \end{figure}
 
-By default, the seeding and trajectory building modules of the standard iterative tracking sequence are replaced completely within \textsc{FastSimulation}. An overview is provided in Fig.~\ref{fig:tracking}. The ability to produce merged hits originating from close particle tracks necessitated a recent refactoring of the \textsc{FastSimulation}-specific data objects within the iterative tracking sequence. As motivated in the introduction, the main idea of sidestepping the reconstruction by using truth information about the origin of each hit remains, but had to be extended. Instead of a one-to-one mapping of reconstructed hits to true particle tracks~(2.), close simulated hits can now result into a single reconstructed ``merged'' hit~(3.) that can be shared between the final tracks within an iteration~(4.). A further benefit is that the mapping itself can be generated independently from the truth information which will allow the mix-in of wrong hit combinations leading to ``fake'' tracks in the future.
+By default, the seeding and trajectory building modules of the standard iterative tracking sequence are replaced completely within \textsc{FastSimulation}. An overview is provided in Fig.~\ref{fig:tracking}. The ability to produce merged hits originating from close particle tracks necessitated a recent refactoring of the \textsc{FastSimulation}-specific data objects within the iterative tracking sequence. As motivated in the introduction, the main idea of sidestepping the reconstruction by using truth information about the origin of each hit remains, but had to be extended. Instead of a one-to-one mapping of reconstructed hits to true particle tracks, close simulated hits can now result into a single reconstructed ``merged'' hit that can be shared between the final tracks within an iteration. A further benefit is that the mapping itself can be generated independently from the truth information which will allow the mix-in of wrong hit combinations leading to ``fake'' tracks in the future which are currently not emulated.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -78,16 +81,17 @@ Track reconstruction within \textsc{FastSimulation} is validated by comparing th
 \end{center}
 \end{figure}
 
+
+
+A profile of the average CPU-time consumption per event within \textsc{FastSimulation} is given in Fig.~\ref{fig:cpu} as a function of the average number of pileup interactions. Less than 10~s are required to simulated an event of top quark pair production for current pileup scenarios with $\approx30$ interactions on average. The emulation of tracking is not amongst the top CPU consumers.
+
+
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures/res_pt.pdf}
 \caption{\label{fig:res-track}Comparison of the resolution of reconstructed tracks as a function of the transverse momentum measured in the simulation of top quark pair production at 13~TeV.}
 \end{center}
 \end{figure}
-
-A profile of the average CPU-time consumption per event within \textsc{FastSimulation} is given in Fig.~\ref{fig:cpu} as a function of the average number of pileup interactions. Less than 10~s are required to simulated an event of top quark pair production for current pileup scenarios with $\approx30$ interactions on average. The emulation of tracking is not amongst the top CPU consumers.
-
-
 
 \begin{figure}[htbp]
 \begin{center}
@@ -100,12 +104,13 @@ A profile of the average CPU-time consumption per event within \textsc{FastSimul
 
 The CMS \textsc{FastSimulation} package provides a fast alternative to the standard simulation and reconstruction workflow. One of its major speedups is the use of truth information in the track reconstruction. Recent developments in the framework led to further flexibility in the emulation of hit reconstruction and to the usage of truth information in the iterative tracking sequence. In the short term, these developments will enable the emulation of the emulation of merged hits originating from close particle tracks. In the long term, the increased flexibility will allow to adapt the emulation of track reconstruction to the planned upgrades of the CMS detector.
 
+
 \ack
 The author thanks the organizers of the \textsc{CHEP2016} conference for the possibility of a poster presentation. Funding is gratefully accepted from Fonds National de Recherche Scientifique~(FNRS), Belgium.
 
 
-\section*{References}
 
+\section*{References}
 \begin{thebibliography}{99}
 \bibitem{cms} CMS Collaboration 2008 {\it JINST} \textbf{3} S08004.
 \bibitem{pf} CMS Collaboration 2009, {\it CMS Physics Analysis Summary} CMS-PAS-PFT-09-001.
