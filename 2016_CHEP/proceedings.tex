@@ -1,7 +1,5 @@
 \documentclass[a4paper]{jpconf}
 \usepackage{graphicx}
-\usepackage[color=white,linecolor=red,bordercolor=red,textsize
-=small]{todonotes}
 \usepackage{hyperref}
 \usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=nonfrench,factor=1100,stretch=15,shrink=15]{microtype}
 \SetTracking{encoding={*}, shape=sc}{0}
@@ -72,7 +70,7 @@ For the simulation of pileup interactions, additional minimum bias events are fi
 
 Track reconstruction within \textsc{FastSimulation} is validated by comparing the tracks from the fast emulation with those obtained from the Geant4-based simulation and standard reconstruction. Figure~\ref{fig:eff-tracks} presents the tracking efficiency as a function of the transverse momentum and pseudorapidity. Here, the tracking efficiency is defined as the ratio of reconstructed tracks matched to simulated charged particles over the total number of charged particles within the tracker volume. Furthermore, the obtained resolution of the transverse momentum for reconstructed tracks is shown in Fig.~\ref{fig:res-track}. Overall, the plots demonstrate a good agreement of the \textsc{FastSimulation} tracking performance with the one observed in the Geant4-based simulation and standard reconstruction.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \begin{center}
 \parbox{0.46\textwidth}{\centering\includegraphics[width=0.45\textwidth]{figures/eff_pt.pdf}\\(a)}
 \hspace{0.05\textwidth}
@@ -86,19 +84,23 @@ Track reconstruction within \textsc{FastSimulation} is validated by comparing th
 A profile of the average CPU-time consumption per event within \textsc{FastSimulation} is given in Fig.~\ref{fig:cpu} as a function of the average number of pileup interactions. Less than 10~s are required to simulated an event of top quark pair production for current pileup scenarios with $\approx30$ interactions on average. The emulation of tracking is not amongst the top CPU consumers.
 
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures/res_pt.pdf}
 \caption{\label{fig:res-track}Comparison of the resolution of reconstructed tracks as a function of the transverse momentum measured in the simulation of top quark pair production at 13~TeV.}
 \end{center}
 \end{figure}
 
-\begin{figure}[htbp]
+\clearpage
+
+\begin{figure}[t]
 \begin{center}
 \includegraphics[width=0.55\textwidth]{figures/cpu_profile.pdf}
 \caption{\label{fig:cpu}Average CPU-time per event spent on the detector simulation and the reconstruction of analysis objects as a function of the average number of pileup interactions measured in the simulation of top quark pair production at 13~TeV.}
 \end{center}
 \end{figure}
+
+
 
 \section{Conclusion and outlook}
 
