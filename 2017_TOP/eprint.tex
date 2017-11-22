@@ -1,6 +1,9 @@
 
 \documentclass[12pt]{article}
 \usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=nonfrench,factor=1100,stretch=15,shrink=15]{microtype}
+\SetTracking{encoding={*}, shape=sc}{0}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % basic data for the eprint:
@@ -71,9 +74,41 @@ Braga, Portugal,  September 17--22, 2017
 
 \section{Cross sections in $t$~channel}
 
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.38\textwidth]{tch-nn.pdf}\hspace{0.02\textwidth}
+\includegraphics[width=0.55\textwidth]{tch-ratio.pdf}
+\caption{Measurement of inclusive $t$-channel cross section: (left)~distribution of neural network discriminant for fitting; (right)~measured charge ratio compared to various PDF sets. The figures are taken from Ref~\cite{tchannel-inc}.}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{unfolded_top_pt.pdf}\hspace{0.02\textwidth}
+\includegraphics[width=0.45\textwidth]{unfolded_top_y.pdf}
+\caption{Measurement of differential $t$-channel cross section as a function of the top quark (left)~transverse momentum and (right)~rapidity. The figures are taken from Ref~\cite{tchannel-diff}.}
+\end{center}
+\end{figure}
+
 \section{Single top quark production in association with a W~boson}
 
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.47\textwidth]{tW-categories.pdf}\hspace{0.02\textwidth}
+\includegraphics[width=0.47\textwidth]{tW-bdt.pdf}
+\caption{Measurement of single top quark cross section in tW-channel: (left)~predicted and observed number of event per category; (right)~distribution of BDT discriminant in (1 jet, 1 b-tag)~category. The figures are taken from Ref~\cite{tw-inc}.}
+\end{center}
+\end{figure}
+
 \section{Single top quark production in association with a Z~boson}
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.97\textwidth]{tZq-fit.pdf}
+\caption{Distributions of ??? . The figures are taken from Ref~\cite{tZq-inc}.}
+\end{center}
+\end{figure}
 
 \section{Conclusion}
 
@@ -86,9 +121,12 @@ Braga, Portugal,  September 17--22, 2017
 
 \begin{thebibliography}{99}
 
-\bibitem{Giammanco}{A. Giammanco and R. Schwienhorst, arXiv:1710.10699 [hep-ex].}
+\bibitem{tchannel-inc}{CMS collaboration, Phys.Lett. \textbf{B772} (2017) 752--776.}
+\bibitem{tchannel-diff}{CMS collaboration, CMS Physics Analysis Summary, CMS-PAS-TOP-16-004, 2016.}
+\bibitem{tw-inc}{CMS collaboration, CMS Physics Analysis Summary, CMS-PAS-TOP-17-018, 2017.}
+\bibitem{tZq-inc}{CMS collaboration, CMS Physics Analysis Summary, CMS-PAS-TOP-16-020, 2017.}
+\bibitem{Giammanco}{A. Giammanco and R. Schwienhorst, \texttt{arXiv:1710.10699 [hep-ex]}.}
 
-\bibitem{Mesmer}{F. A. Mesmer, Proc. Wien. Acad. Sci. {\bf 13}, 1564, 1593 (1762).}
 
 \end{thebibliography}
 
